@@ -1,6 +1,10 @@
+import Header from "@/features/landing-header"
+
 function App() {
   return (
-    <h1>App</h1>
+    <div className="h-2000">
+      <Header />
+    </div>
   )
 }
 

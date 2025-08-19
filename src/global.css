@@ -10,14 +10,18 @@
 
   --color-background: #f8f3ef;
   --color-background-alt: #f9f7f5;
+  --color-icon: #00000033;
 
-  --color-text-primary: #191919;
-  --color-text-secondary: #4c4c4c;
-  --color-text-tertiary: #9f9c99;
+  --color-primary: #191919;
+  --color-secondary: #4c4c4c;
+  --color-tertiary: #9f9c99;
 
-  --color-text-inverted: #ffffff;
-  --color-text-accent: #bb875d;
-  --color-text-muted: #cbc7c4;
+  --color-inverted: #ffffff;
+  --color-accent: #bb875d;
+  --color-muted: #cbc7c4;
+
+  --tracking-wide: 0.02em;
+  --tracking-widest: 0.01em;
 }
 
 @layer base {
