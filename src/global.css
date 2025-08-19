@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+/* @import 'tw-animate-css'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@theme {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --color-background: #f8f3ef;
+  --color-background-alt: #f9f7f5;
+
+  --color-text-primary: #191919;
+  --color-text-secondary: #4c4c4c;
+  --color-text-tertiary: #9f9c99;
+
+  --color-text-inverted: #ffffff;
+  --color-text-accent: #bb875d;
+  --color-text-muted: #cbc7c4;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-space-grotesk font-bold;
+  }
+  p {
+    @apply font-plus-jakarta-sans;
+  }
+}
