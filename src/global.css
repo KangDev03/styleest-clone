@@ -21,11 +21,11 @@
 
   --color-border: #eeeeee;
 
-  --tracking-wide: 0.02em; // 0.32px
-  --tracking-wider: 0.01em; // 0.16px
-  --tracking-ultrawide: 0.2em; // 3.2px
+  --tracking-wide: 0.02em; /*0.32px*/
+  --tracking-wider: 0.01em; /*0.16px*/
+  --tracking-ultrawide: 0.2em; /*3.2px*/
 
-  --text-3.5xl: 2rem; // 32px
+  --text-3.5xl: 2rem; /*32px*/
 }
 
 @layer base {
