@@ -5,7 +5,7 @@ export default function CollaborationSection() {
     <div className="bg-background-alt">
 
       {/* Collaboration 1 Section */}
-      <section className="py-25 px-33">
+      <section className="md:pt-35 lg:pt-25 md:pb-20 lg:pb-25 md:px-15 lg:px-33">
         <div className="container mx-auto flex flex-col items-center justify-center">
           <div className="max-w-[1200px] w-full flex flex-row gap-32 relative">
 
