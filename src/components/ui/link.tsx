@@ -12,7 +12,7 @@ export default function Link({ children, onClick, className }: LinkProps) {
     <div
       onClick={onClick}
       className={`pb-1 border-b border-primary w-fit cursor-pointer ${className}`}>
-      <p className="text-primary text-base font-bold text-center leading-5 tracking-wider">
+      <p className="text-primary text-base font-bold text-center leading-5 tracking-wider md:tracking-normal lg:tracking-wider">
         {children}
       </p>
     </div>
