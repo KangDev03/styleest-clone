@@ -22,7 +22,7 @@ export default function Button({ children, onClick, className, size = 'small' }:
   return (
     <button
       onClick={onClick}
-      className={`w-full min-h-min ${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
+      className={`${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
     >
       <div>
         <p className={`text-primary text-center font-bold tracking-wider ${textStyle}`}>

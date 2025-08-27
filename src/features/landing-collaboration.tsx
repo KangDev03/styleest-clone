@@ -7,7 +7,7 @@ export default function CollaborationSection() {
       {/* Collaboration 1 Section */}
       <section className="py-15 px-6 md:pt-35 lg:pt-25 md:pb-20 lg:pb-25 md:px-15 lg:px-33">
         <div className="flex flex-col items-center justify-center">
-          <div className="max-w-[1200px] w-full flex flex-col md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32 relative">
+          <div className="w-full flex flex-col md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32 relative">
 
             <img
               src="/images/collaboration1-1.png"
@@ -40,7 +40,7 @@ export default function CollaborationSection() {
       {/* Collaboration 2 Section */}
       <section className="py-15 px-6 md:pt-20 md:pb-43 md:px-15 lg:py-27 lg:px-33 relative z-2">
         <div className="flex flex-col items-center justify-center">
-          <div className="max-w-[1200px] w-full flex flex-col-reverse md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32">
+          <div className="w-full flex flex-col-reverse md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32">
 
             <div className="w-full flex flex-col justify-start md:pt-5 lg:pt-14 relative">
               <div className="flex md:block lg:block flex-col justify-center items-center">
@@ -58,7 +58,7 @@ export default function CollaborationSection() {
               <img
                 src="/images/collaboration2-2.png"
                 alt="collaboration2"
-                className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 bottom-42 md:-bottom-39 lg:-bottom-27"
+                className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 -top-37 md:-bottom-39 lg:-bottom-27"
               />
             </div>
 

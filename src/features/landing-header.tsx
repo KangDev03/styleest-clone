@@ -54,7 +54,7 @@ export default function Header() {
     <div className="absolute top-0 left-0 w-full z-2">
       <header className={clsx("p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-33 border-b border-[#ffffff99]", { "bg-primary h-fit md:h-133 flex flex-col": isOpen })}>
         <div className="flex items-center justify-center">
-          <div className="max-w-[1200px] w-full flex flex-wrap items-center justify-between">
+          <div className="w-full flex flex-wrap items-center justify-between">
 
             <h1 className="w-[280px] text-inverted font-bold uppercase text-2xl md:text-3.5xl lg:text-2xl leading-7 md:leading-9.5 lg:leading-7 tracking-wide md:tracking-normal lg:tracking-wide cursor-pointer">styleest</h1>
 
@@ -76,7 +76,7 @@ export default function Header() {
               </IconButton>
 
               <div className="w-35 h-auto hidden md:hidden lg:flex">
-                <Button>Login</Button>
+                <Button className="w-full">Login</Button>
               </div>
             </div>
 

@@ -1,12 +1,12 @@
+import SectionTitle from "@/components/ui/section-title";
+
 export default function About() {
   return (
     <section className="py-15 md:py-20 lg:py-25 px-6 md:px-15 lg:px-33">
       <div className="flex flex-col items-center justify-center">
-        <div className="max-w-[1200px] w-full">
+        <div className="w-full">
           <div>
-            <p className="text-center md:text-left lg:text-left text-accent font-bold leading-5 tracking-ultrawide uppercase">
-              (About us)
-            </p>
+            <SectionTitle className="text-center md:text-left lg:text-left">(About us)</SectionTitle>
           </div>
 
           <div className="mt-6">
