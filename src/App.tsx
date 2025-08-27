@@ -1,4 +1,5 @@
 import About from "@/features/landing-about"
+import BannerSection from "@/features/landing-banner"
 import CollaborationSection from "@/features/landing-collaboration"
 import Header from "@/features/landing-header"
 import HeroSection from "@/features/landing-hero"
@@ -14,6 +15,7 @@ function App() {
       <About />
       <CollaborationSection />
       <ProductSection />
+      <BannerSection />
     </div>
   )
 }

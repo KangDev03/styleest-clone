@@ -58,7 +58,7 @@ export default function CollaborationSection() {
               <img
                 src="/images/collaboration2-2.png"
                 alt="collaboration2"
-                className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 -top-37 md:-bottom-39 lg:-bottom-27"
+                className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 -top-37 md:top-auto lg:top-auto md:-bottom-39 lg:-bottom-27"
               />
             </div>
 
