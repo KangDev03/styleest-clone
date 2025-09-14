@@ -22,12 +22,19 @@ export default function Button({ children, onClick, className, size = 'small' }:
   return (
     <button
       onClick={onClick}
-      className={`${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
+      className={`group relative overflow-hidden ${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
     >
-      <div>
-        <p className={`text-primary text-center font-bold tracking-wider ${textStyle}`}>
+      <div className='relative'>
+        <span
+          className={`block text-primary text-center font-bold tracking-wider ${textStyle} transform transition-all duration-300 translate-y-0 group-hover:-translate-y-30`}
+        >
           {children}
-        </p>
+        </span>
+        <span
+          className={`block text-primary text-center font-bold tracking-wider ${textStyle} absolute -inset-5 transform transition-all duration-300 translate-y-full group-hover:translate-y-0 pt-5`}
+        >
+          {children}
+        </span>
       </div>
     </button>
   )

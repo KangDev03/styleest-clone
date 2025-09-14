@@ -1,9 +1,14 @@
 import About from "@/features/landing-about"
+import ArticlesSection from "@/features/landing-articles"
 import BannerSection from "@/features/landing-banner"
+import CategoriesSection from "@/features/landing-categories"
 import CollaborationSection from "@/features/landing-collaboration"
+import CTASection from "@/features/landing-cta"
+import Footer from "@/features/landing-footer"
 import Header from "@/features/landing-header"
 import HeroSection from "@/features/landing-hero"
 import ProductSection from "@/features/landing-product"
+import TestimonialSection from "@/features/landing-testimonial"
 
 function App() {
   return (
@@ -16,6 +21,11 @@ function App() {
       <CollaborationSection />
       <ProductSection />
       <BannerSection />
+      <CategoriesSection />
+      <TestimonialSection />
+      <ArticlesSection />
+      <CTASection />
+      <Footer />
     </div>
   )
 }

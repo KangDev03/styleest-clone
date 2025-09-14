@@ -8,7 +8,7 @@ import HamburgerIcon from "@/assets/icons/hamburger-icon";
 import SearchIcon from "@/assets/icons/search-icon";
 import XIcon from "@/assets/icons/x-icon";
 
-const NavItem = ["About us", "Collaboration", "Product", "Articles"];
+export const NavItem = ["About us", "Collaboration", "Product", "Articles"];
 
 const NavLinks = () => {
   return (
