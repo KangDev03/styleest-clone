@@ -36,7 +36,7 @@ function Article({ article }: { article: ArticleProps }) {
 export default function ArticlesSection() {
 
   return (
-    <section className="bg-background-alt py-15 px-6 md:py-20 md:px-15 lg:py-30 lg:px-33">
+    <section className="max-w-screen-xl mx-auto py-15 px-6 md:py-20 md:px-15 lg:py-30 lg:px-10">
       <div className="w-full flex flex-col items-center justify-center">
 
         <div className="w-full flex flex-row items-end justify-between mb-8">

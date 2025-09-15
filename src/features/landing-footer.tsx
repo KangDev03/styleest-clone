@@ -9,9 +9,9 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-primary text-inverted py-15 px-6 md:py-16 md:px-15 lg:pt-16 lg:pb-15 lg:px-33">
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-full">
+      <footer className=" text-inverted w-full">
+        <div className="max-w-screen-xl mx-auto py-15 px-6 md:py-16 md:px-15 lg:pt-16 lg:pb-15 lg:px-10">
+          <div className="flex flex-col items-center justify-center">
 
             <div className="flex flex-col lg:flex-row gap-8.5 lg:gap-88">
               <div className="flex flex-col items-center lg:items-start">
@@ -57,7 +57,7 @@ export default function Footer() {
                     <li><p className="text-base font-medium leading-6 tracking-wider text-center md:text-left">contact@styleest.com</p></li>
                     <li>
                       <p className="text-base font-medium leading-6 tracking-wider text-center md:text-left">
-                        2972 Westheimer Rd.<br className="hidden md:block"/>
+                        2972 Westheimer Rd.<br className="hidden md:block" />
                         Santa Ana, Illinois 85486
                       </p>
                     </li>
@@ -68,11 +68,14 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="bg-primary text-muted border-t border-[#474747] pt-7 pb-4 md:pt-12 md:pb-9 px-0 lg:pt-9 lg:pb-6 lg:px-33 flex flex-col lg:flex-row items-center lg:justify-between text-xs">
-        <p className="text-sm font-medium leading-5.5">Copyright© 2023. Agensip Creative Agency. All Right Reserved.</p>
-        <div className="flex space-x-8 mt-4 md:mt-0">
-          <p className="text-sm font-medium leading-5.5">Terms of Service</p>
-          <p className="text-sm font-medium leading-5.5">Privacy Policy</p>
+
+      <div className="text-muted border-t border-[#474747]">
+        <div className="max-w-screen-xl mx-auto pt-7 pb-4 md:pt-12 md:pb-9 px-0 lg:pt-9 lg:pb-6 lg:px-10 flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+          <p className="text-sm font-medium leading-5.5">Copyright© 2023. Agensip Creative Agency. All Right Reserved.</p>
+          <div className="flex space-x-8 mt-4 md:mt-0">
+            <p className="text-sm font-medium leading-5.5">Terms of Service</p>
+            <p className="text-sm font-medium leading-5.5">Privacy Policy</p>
+          </div>
         </div>
       </div>
     </>

@@ -51,8 +51,11 @@ export default function Header() {
 
 
   return (
-    <div className="absolute top-0 left-0 w-full z-2">
-      <header className={clsx("p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-33 border-b border-[#ffffff99]", { "bg-primary h-fit md:h-133 flex flex-col": isOpen })}>
+    <header className={clsx(
+      "w-full border-b border-[#ffffff99] absolute top-0 z-2",
+      { "bg-primary h-fit md:h-133 flex flex-col": isOpen }
+    )}>
+      <div className="max-w-screen-xl mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
         <div className="flex items-center justify-center">
           <div className="w-full flex flex-wrap items-center justify-between">
 
@@ -90,7 +93,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }

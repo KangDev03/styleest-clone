@@ -15,17 +15,24 @@ function App() {
     <div className="min-h-screen flex-col">
       <div className="bg-[url(/images/hero-image.png)] relative w-full h-[800px] bg-cover bg-center bg-no-repeat z-5 overflow-hidden">
         <Header />
+        {/* <div className="bg-[#ffffff99] h-0.25 w-full z-10 absolute top-6"></div> */}
         <HeroSection />
       </div>
       <About />
       <CollaborationSection />
       <ProductSection />
       <BannerSection />
-      <CategoriesSection />
+      <div className="bg-background-alt">
+        <CategoriesSection />
+      </div>
       <TestimonialSection />
-      <ArticlesSection />
+      <div className="bg-background-alt">
+        <ArticlesSection />
+      </div>
       <CTASection />
-      <Footer />
+      <div className="bg-primary">
+        <Footer />
+      </div>
     </div>
   )
 }

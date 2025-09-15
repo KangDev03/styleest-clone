@@ -11,7 +11,7 @@ export default function ProductSection() {
   const breakpoint = useBreakpoint();
 
   return (
-    <section className="py-15 px-6 md:py-20 md:px-15 lg:py-30 lg:px-33">
+    <section className="max-w-screen-xl mx-auto py-15 px-6 md:py-20 md:px-15 lg:py-30 lg:px-10">
       <div className="flex flex-col items-center justify-center">
         <div className="w-full">
 

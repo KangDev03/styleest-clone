@@ -2,7 +2,7 @@ import SectionTitle from "@/components/ui/section-title";
 
 export default function About() {
   return (
-    <section className="py-15 md:py-20 lg:py-25 px-6 md:px-15 lg:px-33">
+    <section className="max-w-screen-xl mx-auto py-15 md:py-20 lg:py-30 px-6 md:px-15 lg:px-10">
       <div className="flex flex-col items-center justify-center">
         <div className="w-full">
           <div>
