@@ -38,7 +38,7 @@ export default function CollaborationSection() {
       </section>
 
       {/* Collaboration 2 Section */}
-      <section className="max-w-screen-xl mx-auto py-15 px-6 md:pt-20 md:pb-43 md:px-15 lg:py-27 lg:px-33 relative z-2">
+      <section className="max-w-screen-xl mx-auto py-15 px-6 md:pt-20 md:pb-43 md:px-15 lg:py-27 lg:px-10 relative z-2">
         <div className="flex flex-col items-center justify-center">
           <div className="w-full flex flex-col-reverse md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32">
 
