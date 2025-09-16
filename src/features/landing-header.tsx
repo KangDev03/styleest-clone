@@ -57,7 +57,7 @@ export default function Header() {
     )}>
       <div className="max-w-screen-xl mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
         <div className="flex items-center justify-center">
-          <div className="w-full flex flex-wrap items-center justify-between">
+          <div className="w-full flex md:flex-wrap items-center justify-between">
 
             <h1 className="w-[280px] text-inverted font-bold uppercase text-2xl md:text-3.5xl lg:text-2xl leading-7 md:leading-9.5 lg:leading-7 tracking-wide md:tracking-normal lg:tracking-wide cursor-pointer">styleest</h1>
 

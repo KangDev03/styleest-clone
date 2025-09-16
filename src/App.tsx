@@ -13,7 +13,7 @@ import TestimonialSection from "@/features/landing-testimonial"
 function App() {
   return (
     <div className="min-h-screen flex-col">
-      <div className="bg-[url(/images/hero-image.png)] relative w-full h-[800px] bg-cover bg-center bg-no-repeat z-5 overflow-hidden">
+      <div className="bg-[url(/images/hero-mobile.jpg)] md:bg-[url(/images/hero-image.png)] relative w-full h-[800px] bg-cover bg-center md:bg-[position:30%_50%] z-5 overflow-hidden">
         <Header />
         {/* <div className="bg-[#ffffff99] h-0.25 w-full z-10 absolute top-6"></div> */}
         <HeroSection />

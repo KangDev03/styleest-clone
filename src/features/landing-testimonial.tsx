@@ -35,7 +35,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         />
       </div>
 
-      <div className="w-105 md:w-full lg:w-full flex flex-col justify-center relative">
+      <div className="max-w-105 md:w-full lg:w-full flex flex-col justify-center relative">
         <QuoteIcon className="absolute left-1/2 md:left-0 lg:left-0 -translate-x-1/2 md:translate-0 lg:translate-0 md:top-5 lg:-top-25 w-25 lg:w-37 h-auto opacity-10 rotate-180" />
 
         <h3 className="text-secondary text-center md:text-left lg:text-left text-xl md:text-2xl lg:text-3.5xl font-bold leading-8 md:leading-9.5 lg:leading-12.5 mb-4 md:mb-6 lg:mb-6">

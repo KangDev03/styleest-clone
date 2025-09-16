@@ -30,21 +30,21 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between lg:justify-start gap-0 lg:gap-14 mt-0 lg:mt-9.75">
+              <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between lg:justify-start gap-y-8 md:gap-0 lg:gap-14 mt-0 lg:mt-9.75">
                 <div>
-                  <h3 className="text-xl font-bold mb-8 md:mb-4 text-center md:text-left">Shop</h3>
+                  <h3 className="text-xl font-bold mb-8 md:mb-4 text-center lg:text-left">Shop</h3>
                   <ul className="space-y-4 text-sm opacity-80">
                     {categories.map((cat, index) => (
-                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center md:text-left">{cat.title}</p>
+                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">{cat.title}</p>
                     ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold mb-8 md:mb-4 text-center md:text-left">Explore</h3>
+                  <h3 className="text-xl font-bold mb-8 md:mb-4 text-center lg:text-left">Explore</h3>
                   <ul className="space-y-4 text-sm opacity-80">
                     {NavItem.map((item, index) => (
-                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center md:text-left">
+                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
                         {item}
                       </p>
                     ))}
@@ -52,11 +52,11 @@ export default function Footer() {
                 </div>
 
                 <div className="col-span-2 lg:col-span-1">
-                  <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact</h3>
+                  <h3 className="text-xl font-bold mb-4 text-center lg:text-left">Contact</h3>
                   <ul className="space-y-4 text-sm opacity-80">
-                    <li><p className="text-base font-medium leading-6 tracking-wider text-center md:text-left">contact@styleest.com</p></li>
+                    <li><p className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">contact@styleest.com</p></li>
                     <li>
-                      <p className="text-base font-medium leading-6 tracking-wider text-center md:text-left">
+                      <p className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
                         2972 Westheimer Rd.<br className="hidden md:block" />
                         Santa Ana, Illinois 85486
                       </p>
@@ -70,8 +70,8 @@ export default function Footer() {
       </footer>
 
       <div className="text-muted border-t border-[#474747]">
-        <div className="max-w-screen-xl mx-auto pt-7 pb-4 md:pt-12 md:pb-9 px-0 lg:pt-9 lg:pb-6 lg:px-10 flex flex-col lg:flex-row items-center lg:justify-between text-xs">
-          <p className="text-sm font-medium leading-5.5">Copyright© 2023. Agensip Creative Agency. All Right Reserved.</p>
+        <div className="max-w-screen-xl mx-auto pt-7 pb-4 md:pt-12 md:pb-9 px-6 md:px-15 lg:pt-9 lg:pb-6 lg:px-10 flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+          <p className="text-sm font-medium leading-5.5 text-center">Copyright© 2023. Agensip Creative Agency. All Right Reserved.</p>
           <div className="flex space-x-8 mt-4 md:mt-0">
             <p className="text-sm font-medium leading-5.5">Terms of Service</p>
             <p className="text-sm font-medium leading-5.5">Privacy Policy</p>

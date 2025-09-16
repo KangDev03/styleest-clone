@@ -5,9 +5,10 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   size?: 'small' | 'large';
+  animated?: boolean;
 }
 
-export default function Button({ children, onClick, className, size = 'small' }: ButtonProps) {
+export default function Button({ children, onClick, className, size = 'small', animated = true }: ButtonProps) {
 
   const textStyle =
     size === 'small'
@@ -26,15 +27,17 @@ export default function Button({ children, onClick, className, size = 'small' }:
     >
       <div className='relative'>
         <p
-          className={`block text-primary text-center font-bold tracking-wider ${textStyle} transform transition-all duration-300 translate-y-0 group-hover:-translate-y-30`}
+          className={`block text-primary text-center font-bold tracking-wider ${textStyle} ${animated ? 'transform transition-all duration-300 translate-y-0 group-hover:-translate-y-30' : ''}`}
         >
           {children}
         </p>
-        <p
-          className={`block text-primary text-center font-bold tracking-wider ${textStyle} absolute -inset-5 transform transition-all duration-300 translate-y-full group-hover:translate-y-0 pt-5`}
-        >
-          {children}
-        </p>
+        {animated && (
+          <p
+            className={`text-primary text-center font-bold tracking-wider ${textStyle} absolute -inset-5 transform transition-all duration-300 translate-y-full group-hover:translate-y-0 pt-5`}
+          >
+            {children}
+          </p>
+        )}
       </div>
     </button>
   )
