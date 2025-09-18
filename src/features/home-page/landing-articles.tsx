@@ -13,20 +13,20 @@ interface ArticleProps {
 
 function Article({ article }: { article: ArticleProps }) {
   return (
-    <article className="flex flex-col-reverse md:flex-row items-start md:items-center py-0 md:py-6 group cursor-pointer">
-      <div className="w-full md:w-86.25 lg:w-full flex flex-col lg:flex-row gap-2.5 lg:gap-21">
-        <h3 className="text-xl md:text-2xl font-bold leading-8 md:leading-9.5 flex-1 group-hover:underline decoration-solid">{article.title}</h3>
-        <div className="flex flex-row items-start md:items-center gap-5">
+    <article className="flex flex-col-reverse md:flex-row items-start md:items-center py-0 md:py-6 group md:cursor-pointer">
+      <div className="lg:flex-1 flex flex-col lg:flex-row w-full md:w-86.25 lg:w-full gap-2.5 lg:gap-21">
+        <h3 className="text-xl md:text-2xl font-bold leading-8 md:leading-9.5 flex-1 md:group-hover:underline md:decoration-solid">{article.title}</h3>
+        <div className="flex flex-row items-center gap-5">
           <p className="text-secondary text-base font-medium leading-6.5 tracking-wider">{article.postDate}</p>
-          <div className="w-2.5 h-2.5 rounded-full cursor-pointer bg-secondary opacity-10"></div>
+          <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full cursor-pointer bg-secondary opacity-10"></div>
           <p className="text-secondary text-base font-medium leading-6.5 tracking-wider">{article.readingTime} min read</p>
         </div>
       </div>
-      <div className="w-full md:w-70 h-35 ml-auto lg:ml-18.5 mb-4 md:mb-0 overflow-hidden">
+      <div className="w-full md:w-70 h-35 ml-auto lg:ml-18.5 mb-4 md:mb-0 overflow-hidden ">
         <img
           src={article.imageUrl}
           alt={article.title}
-          className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110 origin-top"
+          className="w-full h-full object-fill md:object-cover transition-transform duration-400 md:group-hover:scale-110 origin-top"
         />
       </div>
     </article>

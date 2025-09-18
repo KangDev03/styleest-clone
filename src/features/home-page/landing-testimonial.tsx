@@ -5,9 +5,11 @@ import SectionSubTitle from "@/components/ui/section-subtitle";
 import ArrowButton from "@/assets/icons/arrow-button";
 import QuoteIcon from "@/assets/icons/quote-icon";
 import testimonial from "@/data/testimonial.json";
+import { useBreakpoint } from "@/hooks/useBreakpoint";
 
 interface Testimonial {
   imageUrl: string;
+  imageSrcDesktop: string;
   title: string;
   content: string;
   authorName: string;
@@ -16,6 +18,10 @@ interface Testimonial {
 }
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  const breakpoint = useBreakpoint();
+  const imgSrc = breakpoint === "lg" || breakpoint === "xl" || breakpoint === "2xl"
+    ? testimonial.imageSrcDesktop
+    : testimonial.imageUrl
   return (
     <div className="flex flex-col items-center md:grid grid-cols-2 lg:flex lg:flex-row md:gap-21 lg:gap-31">
 
@@ -27,16 +33,18 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         />
       </div> */}
 
-      <div className="w-full hidden md:block lg:block">
+      <div className=" w-full h-full md:w-full md:h-[436px] lg:w-121 lg:h-103 hidden md:block lg:block lg:aspect-[486/412]">
         <img
-          src={testimonial.imageUrl}
+          src={imgSrc}
           alt={testimonial.authorName}
-          className="md:w-full md:h-[436px] w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 
-      <div className="max-w-105 md:w-full lg:w-full flex flex-col justify-center relative">
-        <QuoteIcon className="absolute left-1/2 md:left-0 lg:left-0 -translate-x-1/2 md:translate-0 lg:translate-0 md:top-5 lg:-top-25 w-25 lg:w-37 h-auto opacity-10 rotate-180" />
+      <div className="relative md:w-full lg:w-full flex flex-col justify-center px-14 md:px-0">
+        <div className="absolute w-25 lg:w-37 h-auto left-1/2 md:left-0 -translate-x-1/2 md:translate-0 -top-10 md:-top-10 lg:-top-15 overflow-visible">
+          <QuoteIcon className="w-full h-auto opacity-10 rotate-180" />
+        </div>
 
         <h3 className="text-secondary text-center md:text-left lg:text-left text-xl md:text-2xl lg:text-3.5xl font-bold leading-8 md:leading-9.5 lg:leading-12.5 mb-4 md:mb-6 lg:mb-6">
           {testimonial.title}
@@ -79,9 +87,9 @@ export default function TestimonialSection() {
   return (
     <section className="max-w-screen-xl mx-auto py-15 px-6 md:py-20 md:px-15 lg:py-25 lg:px-10">
       <div className="flex flex-col items-center justify-center">
-        <div className="w-full relative">
+        <div className="w-full ">
 
-          <div className="w-full flex flex-row justify-center md:justify-between lg:justify-between mb-15">
+          <div className="w-full flex flex-row justify-center md:justify-between lg:justify-between">
             <SectionSubTitle className="!mt-0">What our customer says</SectionSubTitle>
             <div className="hidden md:flex lg:flex flex-row gap-6 items-center justify-center">
               <button
@@ -99,7 +107,7 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          <div className="overflow-hidden w-full">
+          <div className="overflow-hidden w-full pt-15">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${index * 100}%)` }}

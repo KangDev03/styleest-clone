@@ -8,12 +8,12 @@ import HamburgerIcon from "@/assets/icons/hamburger-icon";
 import SearchIcon from "@/assets/icons/search-icon";
 import XIcon from "@/assets/icons/x-icon";
 
-export const NavItem = ["About us", "Collaboration", "Product", "Articles"];
+export const navItem = ["About us", "Collaboration", "Product", "Articles"];
 
 const NavLinks = () => {
   return (
     <>
-      {NavItem.map((item, index) => (
+      {navItem.map((item, index) => (
         <h3
           key={index}
           className="font-space-grotesk text-inverted hover:text-primary text-center uppercase font-medium leading-5 tracking-wide duration-300 cursor-pointer"

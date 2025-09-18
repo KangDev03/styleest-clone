@@ -3,7 +3,7 @@ import InstagramIcon from "@/assets/icons/social/instagram";
 import LinkedInIcon from "@/assets/icons/social/linkedIn";
 import XIcon from "@/assets/icons/social/x";
 import categories from "@/data/categories.json";
-import { NavItem } from "@/features/landing-header";
+import { navItem } from "@/features/home-page/landing-header";
 
 export default function Footer() {
 
@@ -43,7 +43,7 @@ export default function Footer() {
                 <div>
                   <h3 className="text-xl font-bold mb-8 md:mb-4 text-center lg:text-left">Explore</h3>
                   <ul className="space-y-4 text-sm opacity-80">
-                    {NavItem.map((item, index) => (
+                    {navItem.map((item, index) => (
                       <p key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
                         {item}
                       </p>
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      <div className="text-muted border-t border-[#474747]">
+      <div className="text-muted opacity-70 border-t border-[#474747]">
         <div className="max-w-screen-xl mx-auto pt-7 pb-4 md:pt-12 md:pb-9 px-6 md:px-15 lg:pt-9 lg:pb-6 lg:px-10 flex flex-col lg:flex-row items-center lg:justify-between text-xs">
           <p className="text-sm font-medium leading-5.5 text-center">Copyright© 2023. Agensip Creative Agency. All Right Reserved.</p>
           <div className="flex space-x-8 mt-4 md:mt-0">
