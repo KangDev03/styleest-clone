@@ -25,7 +25,7 @@ export default function ProductSection() {
             <Link>See All Items</Link>
           </div>
 
-          <div className="mt-8 flex flex-row overflow-x-auto snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:grid-rows-2 lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-6">
+          <div className="mt-8 flex flex-row md:grid md:grid-cols-3 md:grid-rows-2 lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide ">
             {breakpoint === "md" ?
               products.slice(0, 6).map((product: Product) => (
                 <ProductCard key={product.id} product={product} />

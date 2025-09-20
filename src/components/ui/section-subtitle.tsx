@@ -8,8 +8,8 @@ interface SectionSubTitleProps {
 export default function SectionSubTitle({ children, className }: SectionSubTitleProps) {
 
   return (
-    <h1 className={`mt-3 md:mt-4 lg:mt-6 text-primary text-center font-bold text-2xl md:text-3.5xl lg:text-5xl leading-8.5 md:leading-11 lg:leading-17 ${className}`}>
+    <h5 className={`mt-3 md:mt-4 lg:mt-6 text-primary text-center font-bold text-2xl md:text-3.5xl lg:text-5xl leading-8.5 md:leading-11 lg:leading-17 ${className}`}>
       {children}
-    </h1>
+    </h5>
   )
 }

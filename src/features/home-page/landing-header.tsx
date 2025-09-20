@@ -55,7 +55,7 @@ export default function Header() {
       "w-full border-b border-[#ffffff99] absolute top-0 z-2",
       { "bg-primary h-fit md:h-133 flex flex-col": isOpen }
     )}>
-      <div className="max-w-screen-xl mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
+      <div className="lg:max-w-screen-xl lg:mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
         <div className="flex items-center justify-center">
           <div className="w-full flex md:flex-wrap items-center justify-between">
 
@@ -86,10 +86,10 @@ export default function Header() {
           </div>
         </div>
         {isOpen && (
-          <div className="h-full flex flex-col items-center justify-center mt-5 gap-8">
+          <div className="h-full flex flex-col items-center mt-25 gap-8">
             <NavLinks />
-            <div className="w-35 h-auto">
-              <Button>Login</Button>
+            <div className="w-35">
+              <Button className="w-full">Login</Button>
             </div>
           </div>
         )}
