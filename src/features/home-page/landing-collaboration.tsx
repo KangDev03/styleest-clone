@@ -10,14 +10,14 @@ export default function CollaborationSection() {
           <div className="w-full flex flex-col md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32 relative">
 
             <img
-              src="/images/collaboration1-1.png"
+              src="/images/avif/collaboration/collaboration1-1.avif"
               alt="collaboration1"
               className="w-full h-78 md:w-56 md:h-69 lg:w-122 lg:h-150 max-w-full object-cover object-top md:object-center lg:object-center"
             />
 
             <div className="w-fit flex flex-col justify-end md:pb-5 lg:pb-14">
               <img
-                src="/images/collaboration1-2.png"
+                src="/images/avif/collaboration/collaboration1-2.avif"
                 alt="collaboration1"
                 className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-fill lg:object-cover absolute top-58 md:-top-50 lg:-top-44 right-0"
               />
@@ -56,14 +56,14 @@ export default function CollaborationSection() {
               </div>
 
               <img
-                src="/images/collaboration2-2.png"
+                src="/images/avif/collaboration/collaboration2-2.avif"
                 alt="collaboration2"
                 className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 -top-37 md:top-auto lg:top-auto md:-bottom-39 lg:-bottom-27"
               />
             </div>
 
             <img
-              src="/images/collaboration2-1.png"
+              src="/images/avif/collaboration/collaboration2-1.avif"
               alt="collaboration2"
               className="w-full h-78 md:w-56 md:h-69 lg:w-122 lg:h-150 max-w-full object-cover object-top md:object-center lg:object-center"
             />

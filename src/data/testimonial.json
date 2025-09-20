@@ -1,29 +1,29 @@
 [
   {
-    "imageUrl": "/images/testimonial/testimonial-1.png",
-    "imageSrcDesktop": "/images/testimonial/testimonial-1-desktop.png",
+    "imageUrl": "/images/avif/testimonial/testimonial-1.avif",
+    "imageSrcDesktop": "/images/avif/testimonial/testimonial-1-desktop.avif",
     "title": "Absolutely thrilled with my recent purchase from Styleest.",
     "content": "The quality of the clothing exceeded my expectations, and the attention to detail in the design is impeccable. Not only did I receive compliments on my outfit, but the entire shopping experience was seamless.",
     "authorName": "Rolando Doner",
     "authorRole": "Fashion Stylist",
-    "authorAvatar": "/images/testimonial/testimonial-avatar-1.png"
+    "authorAvatar": "/images/avif/testimonial/testimonial-avatar-1.avif"
   },
   {
-    "imageUrl": "/images/testimonial/testimonial-2.png",
-    "imageSrcDesktop": "/images/testimonial/testimonial-2.png",
+    "imageUrl": "/images/avif/testimonial/testimonial-2.avif",
+    "imageSrcDesktop": "/images/avif/testimonial/testimonial-2.avif",
     "title": "As someone who values both style and comfort in this blazer.",
     "content": "The fabric is not only luxurious but also breathable, making it ideal for various occasions. The tailored fit gives it a modern and polished look, ensuring that I feel confident and put-together whenever I wear it.",
     "authorName": "Jhon Sabreta",
     "authorRole": "Employee",
-    "authorAvatar": "/images/testimonial/testimonial-avatar-2.png"
+    "authorAvatar": "/images/avif/testimonial/testimonial-avatar-2.avif"
   },
   {
-    "imageUrl": "/images/testimonial/testimonial-3.png",
-    "imageSrcDesktop": "/images/testimonial/testimonial-3.png",
+    "imageUrl": "/images/avif/testimonial/testimonial-3.avif",
+    "imageSrcDesktop": "/images/avif/testimonial/testimonial-3.avif",
     "title": "As someone who values both style and comfort in this blazer.",
     "content": "The fabric is not only luxurious but also breathable, making it ideal for various occasions. The tailored fit gives it a modern and polished look, ensuring that I feel confident and put-together whenever I wear it.",
     "authorName": "Dona Saramanda",
     "authorRole": "GYM Instructure",
-    "authorAvatar": "/images/testimonial/testimonial-avatar-3.png"
+    "authorAvatar": "/images/avif/testimonial/testimonial-avatar-3.avif"
   }
 ]

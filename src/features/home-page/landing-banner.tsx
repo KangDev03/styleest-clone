@@ -2,7 +2,7 @@ import Button from "@/components/ui/button";
 
 export default function BannerSection() {
   return (
-    <div className="bg-[url(/images/banner.png)] relative w-full h-[622px] lg:h-[800px] bg-cover bg-top bg-no-repeat z-5 overflow-hidden">
+    <div className="bg-[url(/images/avif/banner.avif)] relative w-full h-[622px] lg:h-[800px] bg-cover bg-top bg-no-repeat z-5 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-6 md:px-15 pb-15 lg:px-10 h-full flex items-end">
         <div className="flex flex-col items-center md:flex-row md:items-center lg:flex-row lg:items-end gap-6 lg:gap-27">
           <h1 className="flex-1 max-w-198 text-inverted text-center text-2.5xl leading-8.5 md:text-left md:text-4.5xl md:leading-11.5 lg:text-left lg:text-7xl lg:leading-21.5">Get everyting you need for your fashion look and life style</h1>

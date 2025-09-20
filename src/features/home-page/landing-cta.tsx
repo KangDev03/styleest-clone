@@ -3,7 +3,7 @@ import Button from "@/components/ui/button";
 export default function CTASection() {
 
   return (
-    <section className="bg-[url(/images/cta.png)] bg-cover bg-center bg-no-repeat">
+    <section className="bg-[url(/images/avif/cta.avif)] bg-cover bg-center bg-no-repeat">
       <div className="max-w-screen-xl mx-auto py-15 px-6 md:py-20 md:px-15 lg:py-29 lg:px-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div className="text-inverted">
