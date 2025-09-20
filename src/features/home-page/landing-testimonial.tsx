@@ -24,15 +24,6 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
     : testimonial.imageUrl
   return (
     <div className="flex flex-col items-center md:grid grid-cols-2 lg:flex lg:flex-row md:gap-21 lg:gap-31">
-
-      {/* <div className="w-full md:aspect-video lg:aspect-[486/412]">
-        <img
-          src={testimonial.imageUrl}
-          alt={testimonial.authorName}
-          className="w-full h-full object-cover object-center"
-        />
-      </div> */}
-
       <div className=" w-full h-full md:w-full md:h-[436px] lg:w-121 lg:h-103 hidden md:block lg:block lg:aspect-[486/412]">
         <img
           src={imgSrc}
@@ -94,12 +85,14 @@ export default function TestimonialSection() {
             <div className="hidden md:flex lg:flex flex-row gap-6 items-center justify-center">
               <button
                 onClick={prev}
+                aria-label="Previous testimonial"
                 className="rotate-180 cursor-pointer active:scale-90 transition-transform duration-200"
               >
                 <ArrowButton className="md:size-10.25 lg:size-13.75 opacity-50" />
               </button>
               <button
                 onClick={next}
+                aria-label="Next testimonial"
                 className="cursor-pointer active:scale-90 transition-transform duration-200"
               >
                 <ArrowButton className="md:size-10.25 lg:size-13.75" />
@@ -125,6 +118,7 @@ export default function TestimonialSection() {
               <button
                 key={i}
                 onClick={() => goTo(i)}
+                aria-label={`Go to testimonial ${i + 1}`}
                 className={`w-2.5 h-2.5 rounded-full cursor-pointer ${i === index ? "bg-black" : "bg-secondary opacity-70"
                   }`}
               />

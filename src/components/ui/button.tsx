@@ -22,6 +22,7 @@ export default function Button({ children, onClick, className, size = 'small', a
 
   return (
     <button
+      type='button'
       onClick={onClick}
       className={`group relative overflow-hidden ${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
     >
