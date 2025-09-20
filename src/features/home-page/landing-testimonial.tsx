@@ -119,7 +119,7 @@ export default function TestimonialSection() {
                 key={i}
                 onClick={() => goTo(i)}
                 aria-label={`Go to testimonial ${i + 1}`}
-                className={`w-6 h-6 flex items-center justify-center rounded-full cursor-pointer focus-visible:ring-2 -ml-1 }`}
+                className={`w-6 h-6 flex items-center justify-center rounded-full cursor-pointer focus-visible:ring-2 }`}
               >
                 <span
                   className={`block w-2.5 h-2.5 rounded-full ${i === index ? "bg-black" : "bg-secondary opacity-70"
