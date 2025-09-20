@@ -6,6 +6,28 @@ import categories from "@/data/categories.json";
 import { navItem } from "@/features/home-page/landing-header";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      href: "/",
+      label: "Follow us on X",
+      Icon: XIcon,
+    },
+    {
+      href: "/",
+      label: "Follow us on Instagram",
+      Icon: InstagramIcon,
+    },
+    {
+      href: "/",
+      label: "Connect with us on LinkedIn",
+      Icon: LinkedInIcon,
+    },
+    {
+      href: "/",
+      label: "Like us on Facebook",
+      Icon: FacebookIcon,
+    },
+  ];
 
   return (
     <>
@@ -22,11 +44,16 @@ export default function Footer() {
                   sophistication and contemporary allure.
                 </p>
 
-                <div className="flex space-x-4 text-muted">
-                  <XIcon className="w-3.5 h-3.5" />
-                  <InstagramIcon className="w-3.5 h-3.5" />
-                  <LinkedInIcon className="w-3.5 h-3.5" />
-                  <FacebookIcon className="w-3.5 h-3.5" />
+                <div className="text-muted">
+                  <ul className="flex space-x-4">
+                    {socialLinks.map((social, index) => (
+                      <li key={index}>
+                        <a href={social.href} aria-label={social.label}>
+                          <social.Icon className="w-3.5 h-3.5" aria-hidden="true" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
@@ -35,7 +62,9 @@ export default function Footer() {
                   <h3 className="text-xl font-bold mb-8 md:mb-4 text-center lg:text-left">Shop</h3>
                   <ul className="space-y-4 text-sm opacity-80">
                     {categories.map((cat, index) => (
-                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">{cat.title}</p>
+                      <li key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
+                        {cat.title}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -44,9 +73,9 @@ export default function Footer() {
                   <h3 className="text-xl font-bold mb-8 md:mb-4 text-center lg:text-left">Explore</h3>
                   <ul className="space-y-4 text-sm opacity-80">
                     {navItem.map((item, index) => (
-                      <p key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
+                      <li key={index} className="text-base font-medium leading-6 tracking-wider text-center lg:text-left">
                         {item}
-                      </p>
+                      </li>
                     ))}
                   </ul>
                 </div>
