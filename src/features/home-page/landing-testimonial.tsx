@@ -113,15 +113,20 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2 absolute left-1/2 -translate-x-1/2 mt-8">
+          <div className="flex items-center justify-center absolute left-1/2 -translate-x-1/2 mt-8">
             {testimonial.map((_, i) => (
               <button
                 key={i}
                 onClick={() => goTo(i)}
                 aria-label={`Go to testimonial ${i + 1}`}
-                className={`w-2.5 h-2.5 rounded-full cursor-pointer ${i === index ? "bg-black" : "bg-secondary opacity-70"
-                  }`}
-              />
+                className={`w-6 h-6 flex items-center justify-center rounded-full cursor-pointer focus-visible:ring-2 -ml-1 }`}
+              >
+                <span
+                  className={`block w-2.5 h-2.5 rounded-full ${i === index ? "bg-black" : "bg-secondary opacity-70"
+                    }`}
+                  aria-hidden="true"
+                />
+              </button>
             ))}
           </div>
 
