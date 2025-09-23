@@ -1,4 +1,5 @@
 import React from 'react'
+import { clsx } from 'clsx'
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -24,17 +25,27 @@ export default function Button({ children, onClick, className, size = 'small', a
     <button
       type='button'
       onClick={onClick}
-      className={`group relative overflow-hidden ${buttonSize} px-8 bg-inverted rounded-full border border-border cursor-pointer ${className}`}
+      className={clsx(
+        'group relative overflow-hidden px-8 bg-inverted rounded-full border border-border cursor-pointer',
+        buttonSize,
+        className
+      )}
     >
       <div className='relative'>
         <p
-          className={`block text-primary text-center font-bold tracking-wider ${textStyle} ${animated ? 'transform transition-all duration-300 translate-y-0 group-hover:-translate-y-30' : ''}`}
+          className={clsx(
+            'block text-primary text-center font-bold tracking-wider',
+            textStyle,
+            animated && 'transform transition-all duration-300 translate-y-0 group-hover:-translate-y-30'
+          )}
         >
           {children}
         </p>
         {animated && (
           <p
-            className={`text-primary text-center font-bold tracking-wider ${textStyle} absolute -inset-5 transform transition-all duration-300 translate-y-full group-hover:translate-y-0 pt-5`}
+            className={clsx('text-primary text-center font-bold tracking-wider absolute -inset-5 transform transition-all duration-300 translate-y-full group-hover:translate-y-0 pt-5',
+              textStyle
+            )}
           >
             {children}
           </p>

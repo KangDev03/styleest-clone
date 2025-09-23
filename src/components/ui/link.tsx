@@ -1,4 +1,5 @@
 import React from 'react'
+import { clsx } from 'clsx'
 
 interface LinkProps {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ export default function Link({ children, onClick, className }: LinkProps) {
   return (
     <div
       onClick={onClick}
-      className={`pb-1 border-b border-primary w-fit cursor-pointer ${className}`}>
+      className={clsx('pb-1 border-b border-primary w-fit cursor-pointer', className)}>
       <p className="text-primary text-base font-bold text-center leading-5 tracking-wider md:tracking-normal lg:tracking-wider">
         {children}
       </p>
