@@ -35,6 +35,8 @@ export default function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-120 origin-top"
+          width={328}
+          height={400}
         />
         <div className="px-5">
           <Button animated={false} className="w-full absolute bottom-16 left-1/2 -translate-x-1/2 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500">Add to Cart</Button>
