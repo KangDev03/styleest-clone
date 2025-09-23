@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="max-w-screen-xl mx-auto pt-97.5 md:pt-39 lg:pt-39 px-6 md:px-15 lg:px-10 h-full">
       <div className="flex flex-col-reverse md:flex-col lg:flex-col items-center justify-center gap-4 md:gap-10 lg:gap-20">
 
-        <div className="w-full text-background hidden md:hidden lg:flex flex-col gap-4 ">
+        <div className="w-full text-background hidden md:hidden lg:flex flex-col gap-4 z-10">
           <div className="flex justify-end">
             <h1 className="w-72 text-3.5xl font-bold leading-11 text-right">Crafting stories with every stitch</h1>
           </div>

@@ -27,6 +27,8 @@ function Article({ article }: { article: ArticleProps }) {
           src={article.imageUrl}
           alt={article.title}
           className="w-full h-full object-fill md:object-cover transition-transform duration-400 md:group-hover:scale-110 origin-top"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </article>

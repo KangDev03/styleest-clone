@@ -18,6 +18,8 @@ function CategoryCardDesktop({ category }: { category: CategoryProps }) {
         src={category.imageUrl}
         alt={category.title}
         className="w-full h-full object-cover object-[50%_30%] transition-transform duration-400 group-hover:scale-110 origin-center"
+        loading="lazy"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent"></div>
 
@@ -38,6 +40,8 @@ function CategoryCardTablet({ category, index }: { category: CategoryProps; inde
         src={category.imageUrl}
         alt={category.title}
         className="w-full h-55 object-cover"
+        loading="lazy"
+        decoding="async"
       />
       <div className="max-w-86">
         <h3 className="text-xl font-bold mb-2.5">{category.title}</h3>
@@ -55,6 +59,8 @@ function CategoryCardMobile({ category }: { category: CategoryProps }) {
         src={category.imageUrl}
         alt={category.title}
         className="w-96 h-78 object-cover mb-6 object-[50%_30%]"
+        loading="lazy"
+        decoding="async"
       />
       <div className="flex flex-col items-center text-center">
         <h3 className="text-xl font-bold mb-2.5">{category.title}</h3>

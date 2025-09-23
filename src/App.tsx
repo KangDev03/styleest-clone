@@ -13,9 +13,25 @@ import TestimonialSection from "@/features/home-page/landing-testimonial"
 function App() {
   return (
     <div className="min-h-screen flex-col">
-      <div className="bg-[url(/images/hero-mobile.jpg)] md:bg-[url(/images/hero-image.png)] relative w-full h-[800px] bg-cover bg-center md:bg-[position:30%_50%] z-5 overflow-hidden">
+      {/* <div className="bg-[url(/images/hero-mobile.jpg)] md:bg-[url(/images/hero-image.png)] relative w-full h-[800px] bg-cover bg-center md:bg-[position:30%_50%] z-5 overflow-hidden">
         <Header />
-        {/* <div className="bg-[#ffffff99] h-0.25 w-full z-10 absolute top-6"></div> */}
+        <HeroSection />
+      </div> */}
+      <div className="relative w-full h-[800px] z-5 overflow-hidden">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcSet="/images/avif/hero.avif"
+          />
+          <img
+            src="/images/avif/hero-mobile.avif"
+            alt="STYLEEST Special project"
+            fetchPriority="high"
+            loading="eager"
+            className="absolute top-0 left-0 w-full h-full object-cover md:object-[30%_50%]"
+          />
+        </picture>
+        <Header />
         <HeroSection />
       </div>
       <About />

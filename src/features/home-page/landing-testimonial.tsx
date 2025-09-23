@@ -29,6 +29,8 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
           src={imgSrc}
           alt={testimonial.authorName}
           className="w-full h-full object-cover object-center"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -49,6 +51,8 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
             src={testimonial.authorAvatar}
             alt={testimonial.authorName}
             className="size-12 lg:size-14 rounded-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
           <div className="flex flex-col">
             <p className="text-base lg:text-xl font-medium md:leading-6 lg:leading-8">{testimonial.authorName}</p>
@@ -59,6 +63,8 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
               src={testimonial.imageUrl}
               alt={testimonial.authorName}
               className="w-full h-full object-cover object-center"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
