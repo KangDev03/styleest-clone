@@ -52,8 +52,8 @@ export default function Header() {
 
   return (
     <header className={clsx(
-      "w-full border-b border-[#ffffff99] absolute top-0 z-2",
-      { "bg-primary h-fit md:h-133 flex flex-col": isOpen }
+      "w-full border-b border-[#ffffff99] absolute top-0 z-2 overflow-hidden transition-all transition-discrete duration-400 ease-in-out",
+      isOpen ? "bg-primary h-91 md:h-133" : "bg-transparent h-20 md:h-27"
     )}>
       <div className="lg:max-w-screen-xl lg:mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
         <div className="flex items-center justify-center">
@@ -86,7 +86,7 @@ export default function Header() {
           </div>
         </div>
         {isOpen && (
-          <div className="h-full flex flex-col items-center mt-25 gap-8">
+          <div className="h-full flex flex-col items-center mt-5 md:mt-25 gap-8">
             <NavLinks />
             <div className="w-35">
               <Button className="w-full">Login</Button>
