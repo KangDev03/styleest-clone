@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { clsx } from "clsx";
+import { motion } from "motion/react"
 
 import Button from "@/components/ui/button";
 
@@ -51,10 +52,15 @@ export default function Header() {
 
 
   return (
-    <header className={clsx(
-      "w-full border-b border-[#ffffff99] absolute top-0 z-2 overflow-hidden transition-all transition-discrete duration-400 ease-in-out",
-      isOpen ? "bg-primary h-91 md:h-133" : "bg-transparent h-20 md:h-27"
-    )}>
+    <motion.header
+      className={clsx(
+        "w-full border-b border-[#ffffff99] absolute top-0 z-2 overflow-hidden transition-all transition-discrete duration-400 ease-in-out",
+        isOpen ? "bg-primary h-91 md:h-133 lg:h-20" : "bg-transparent h-20 md:h-27 lg:h-20"
+      )}
+      initial={{transform: 'translateY(-100%)'}}
+      animate={{transform: 'translateY(0)'}}
+      transition={{ duration: 1, delay: 0.5 }}
+      >
       <div className="lg:max-w-screen-xl lg:mx-auto p-6 md:pt-10 md:pb-5 md:px-15 lg:py-4 lg:px-10">
         <div className="flex items-center justify-center">
           <div className="w-full flex md:flex-wrap items-center justify-between">
@@ -94,6 +100,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </header>
+    </motion.header>
   )
 }

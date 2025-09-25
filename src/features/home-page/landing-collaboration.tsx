@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 import Link from "@/components/ui/link";
 
 export default function CollaborationSection() {
@@ -9,24 +11,44 @@ export default function CollaborationSection() {
         <div className="flex flex-col items-center justify-center">
           <div className="w-full flex flex-col md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32 relative">
 
-            <img
+            {/* <motion.div
+              initial={{ transform: 'translateY(-100%)' }}
+              animate={{ transform: 'translateY(0)' }}
+              transition={{ duration: 1, delay: 0.5 }}
+            > */}
+            <motion.img
               src="/images/avif/collaboration/collaboration1-1.avif"
               alt="collaboration1"
               className="w-full h-78 md:w-56 md:h-69 lg:w-122 lg:h-150 max-w-full object-cover object-top md:object-center lg:object-center"
               loading="lazy"
               decoding="async"
+              initial={{ y: '15%', opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.8 }}
+              viewport={{ once: true }}
             />
+            {/* </motion.div> */}
 
             <div className="w-fit flex flex-col justify-end md:pb-5 lg:pb-14">
-              <img
+              <motion.img
                 src="/images/avif/collaboration/collaboration1-2.avif"
                 alt="collaboration1"
                 className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-fill lg:object-cover absolute top-58 md:-top-50 lg:-top-44 right-0"
                 loading="lazy"
                 decoding="async"
+                initial={{ y: '15%', opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                viewport={{ once: true }}
               />
 
-              <div className="flex md:block lg:block flex-col justify-center items-center">
+              <motion.div
+                className="flex md:block lg:block flex-col justify-center items-center"
+                initial={{ x: '-15%', opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <h3 className="text-primary text-xl lg:text-3.5xl font-bold leading-7 lg:leading-11">STYLEEST collaborates with TAYSON</h3>
 
                 <div className="mt-4 md:mt-6 lg:mt-6 w-full">
@@ -34,7 +56,7 @@ export default function CollaborationSection() {
                 </div>
 
                 <Link className="mt-6 md:mt-8 lg:mt-8">See Collection</Link>
-              </div>
+              </motion.div>
             </div>
 
           </div>
@@ -47,7 +69,13 @@ export default function CollaborationSection() {
           <div className="w-full flex flex-col-reverse md:flex-row lg:flex-row gap-17 md:gap-22 lg:gap-32">
 
             <div className="w-full flex flex-col justify-start md:pt-5 lg:pt-14 relative">
-              <div className="flex md:block lg:block flex-col justify-center items-center">
+              <motion.div
+                className="flex md:block lg:block flex-col justify-center items-center"
+                initial={{ x: '-15%', opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <div>
                   <h3 className="text-primary text-xl lg:text-3.5xl font-bold leading-7 lg:leading-11">STYLEEST collaborates with COUTU</h3>
                 </div>
@@ -57,23 +85,31 @@ export default function CollaborationSection() {
                 </div>
 
                 <Link className="mt-6 md:mt-8 lg:mt-8">See Collection</Link>
-              </div>
+              </motion.div>
 
-              <img
+              <motion.img
                 src="/images/avif/collaboration/collaboration2-2.avif"
                 alt="collaboration2"
                 className="w-40 md:w-56 lg:w-96 h-30 md:h-41 lg:h-82 max-w-full object-cover md:object-cover lg:object-contain absolute left-0 -top-37 md:top-auto lg:top-auto md:-bottom-39 lg:-bottom-27"
                 loading="lazy"
                 decoding="async"
+                initial={{ y: '15%', opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                viewport={{ once: true }}
               />
             </div>
 
-            <img
+            <motion.img
               src="/images/avif/collaboration/collaboration2-1.avif"
               alt="collaboration2"
               className="w-full h-78 md:w-56 md:h-69 lg:w-122 lg:h-150 max-w-full object-cover object-top md:object-center lg:object-center"
               loading="lazy"
               decoding="async"
+              initial={{ y: '15%', opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.5 }}
+              viewport={{ once: true }}
             />
 
           </div>
